@@ -14,7 +14,6 @@ document.getElementById('Memory-defult-cost').addEventListener('click', function
 document.getElementById('prime-delivery').addEventListener('click', function() {
     extraDeliveryCost(true)
     totalCalculate()
-
 })
 
 document.getElementById('free-delivery').addEventListener('click', function() {
@@ -32,16 +31,13 @@ document.getElementById('double-extra-storage').addEventListener('click', functi
 document.getElementById('extra-storage').addEventListener('click', function() {
     extraStorageCost(false);
     totalCalculate()
-
 })
 
 document.getElementById('defult-storage').addEventListener('click', function() {
-    extraStorageCost()
-    totalCalculate()
-
-})
-
-// extra memory cost function 
+        extraStorageCost()
+        totalCalculate()
+    })
+    // extra memory cost function 
 function extraMemoryCost(isincrease) {
     const memory = document.getElementById('memory-total');
     const memoryValue = parseInt(memory.innerText)
@@ -79,7 +75,6 @@ function extraStorageCost(isIncrease) {
         storage.innerText = 0;
     }
     return storageValue;
-
 }
 
 // totalCalculate function 
